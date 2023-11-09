@@ -1,0 +1,89 @@
+ /* MOBILE FIRST */
+ #contenedor {
+    /* Rejilla de paginación */
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-areas:
+      "cajapar"
+      "cajaimpar"
+      "cajapar"
+      "cajaimpar"
+      "cajadatos"
+      "cajapar"
+      "cajaimpar";
+   
+    /* Formateo */
+    width: 100%;
+    margin: auto;
+  }
+  body{
+   
+  }
+  .cajapar {   
+      grid-area: cajapar;   
+      background-color: #EDECED;
+      color: #020202;
+  }   
+  .cajaimpar {   
+    grid-area: cajaimpar;   
+    background-color:#EFEBE4;
+    color: #B93F37;
+}   
+  
+  .cajadatos {   
+    grid-area: cajadatos;   
+    background-color:#020202;
+    color: #ffffff;
+}   
+  
+  .cajatexto {   
+      grid-area: cajatexto;   
+      background-color: white;
+      font-size: 20px;
+      font-family:sans-serif;
+      color: black;
+      text-align: center;
+  }
+  
+  
+  /* PARA TABLETS */
+  
+  @media only screen and (min-width: 768px) {   
+      #contenedor {   
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+          "cajapar"
+          "cajaimpar"
+          "cajapar"
+          "cajaimpar"
+          "cajadatos"
+          "cajapar"
+          "cajaimpar";
+       
+        /* Formateo */
+        width: 100%;
+        margin: auto;
+      }   
+  }
+  
+  /* PARA PANTALLAS GRANDES */
+  
+  @media only screen and (min-width: 1024px)  {   
+    #contenedor {   
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+          "cajapar"
+          "cajaimpar"
+          "cajapar"
+          "cajaimpar"
+          "cajadatos"
+          "cajapar"
+          "cajaimpar";
+       
+        /* Formateo */
+        width: 100%;
+        margin: auto;
+      }   
+  } 
