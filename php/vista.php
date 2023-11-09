@@ -25,40 +25,102 @@
 
 <body>
   <header>
-    <!-- place navbar here -->
-  </header>
+
+  <nav class="navbar navbar-expand-lg  bg-header p-3">
+    <div class="container-fluid">
+        <img class="imglogo" src="../img/logoportfolio-transformed.png">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto ">
+          <li class="nav-item">
+            <a class="nav-link mx-2 active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="#">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="#">Pricing</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+</header>
+  <div id="contenedor">   
   <main>
-   <div id="contenedor">   
-       
-    <section class="cajapar">
-
+  <section class="cajapar">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quos minus? Ipsum a possimus dolorum. Culpa ipsam quisquam vitae, cumque dicta, sunt impedit molestias corporis repudiandae, quos nihil. Delectus, sed?</p>
     </section>
 
     <section class="cajaimpar">
-
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quos minus? Ipsum a possimus dolorum. Culpa ipsam quisquam vitae, cumque dicta, sunt impedit molestias corporis repudiandae, quos nihil. Delectus, sed?</p>
     </section>
 
     <section class="cajapar">
-
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quos minus? Ipsum a possimus dolorum. Culpa ipsam quisquam vitae, cumque dicta, sunt impedit molestias corporis repudiandae, quos nihil. Delectus, sed?</p>
     </section>
 
     <section class="cajaimpar">
-
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quos minus? Ipsum a possimus dolorum. Culpa ipsam quisquam vitae, cumque dicta, sunt impedit molestias corporis repudiandae, quos nihil. Delectus, sed?</p>
     </section>
 
     <section class="cajapar">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quos minus? Ipsum a possimus dolorum. Culpa ipsam quisquam vitae, cumque dicta, sunt impedit molestias corporis repudiandae, quos nihil. Delectus, sed?</p>
+    </section>
 
+    <section class="cajaimpar">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quos minus? Ipsum a possimus dolorum. Culpa ipsam quisquam vitae, cumque dicta, sunt impedit molestias corporis repudiandae, quos nihil. Delectus, sed?</p>
     </section>
 
     <section class="cajadatos">
-
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quos minus? Ipsum a possimus dolorum. Culpa ipsam quisquam vitae, cumque dicta, sunt impedit molestias corporis repudiandae, quos nihil. Delectus, sed?</p>
     </section>
 
   </main>
-  <footer>
-    <!-- place footer here -->
-  </footer>
+</div>
+<footer class="bg-footer text-center text-lg-start ">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Footer text</h5>
 
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+          molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+          aliquam voluptatem veniam, est atque cumque eum delectus sint!
+        </p>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Footer text</h5>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+          molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+          aliquam voluptatem veniam, est atque cumque eum delectus sint!
+        </p>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3 bg-copyright">
+    © 2020 Copyright:
+    <a class="text-dark" href="https://mdbootstrap.com/">Nicolás Gómez García</a>
+  </div>
+  <!-- Copyright -->
+</footer>
 
 </body>
 
