@@ -6,22 +6,20 @@ body{
   /* Rejilla de paginación */
   display: grid;
   grid-template-columns: 1fr;
-
+  grid-template-rows: repeat(12, 1fr);
   grid-template-areas:
-  "cajaimpar"
+  "cajapar"
   " cajaimagen"
     "cajaimagen"
+    "cajaimpar"
     "cajapar"
-    "cajaimpar"
     " cajaimagen"
     "cajaimagen"
-    " cajapar"
-    "cajaimpar"
+    " cajaimpar"
+    "cajapar"
     " cajaimagen"
     "cajaimagen"
-    " cajadatos"
-    "cajaimagen "
-    "cajaimpar";
+    " cajadatos";
  
   /* Formateo */
   width: 100%;
@@ -57,19 +55,13 @@ img{
   color: #ffffff;
 }   
 
-.cajatexto {   
-    grid-area: cajatexto;   
-    background-color: white;
-    font-size: 20px;
-    font-family:sans-serif;
-    color: black;
-    text-align: center;
-}
 .cajaimagen{
   grid-area: cajaimagen;
   background-color: #EDECED;
-
+  width: 150px;
+  height: 150px ;
 }
+
 .imglogo{
   width: 80px;
   height: 40px ;
@@ -80,16 +72,15 @@ img{
 @media only screen and (min-width: 768px) {   
     .contenedor {   
       display: grid;
-      grid-template-columns: 500px 500px;
-  
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(6, 1fr);
       grid-template-areas:
-      "cajaimpar cajaimagen"
-    "cajaimagen cajapar"
-    "cajaimpar cajaimagen"
-    "cajaimagen cajapar"
-    "cajaimpar cajaimagen"
-    "cajaimagen cajadatos"
-    "cajaimagen cajaimpar";
+      "cajapar cajaimagen"
+    "cajaimagen cajaimpar"
+    "cajapar cajaimagen"
+    "cajaimagen cajaimpar"
+    "cajapar cajaimagen"
+    "cajaimagen cajadatos";
  
      
       /* Formateo */
@@ -103,17 +94,15 @@ img{
 @media only screen and (min-width: 1024px)  {   
   .contenedor {   
       display: grid;
-      grid-template-columns: 500px 500px;
-    
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(6, 1fr);
       grid-template-areas:
-      "cajaimpar cajaimagen"
-      "cajaimagen cajapar"
-      "cajaimpar cajaimagen"
-      "cajaimagen cajapar"
-      "cajaimpar cajaimagen"
-      "cajaimagen cajadatos"
-      "cajaimagen cajaimpar";
-   
+      "cajapar cajaimagen"
+    "cajaimagen cajaimpar"
+    "cajapar cajaimagen"
+    "cajaimagen cajaimpar"
+    "cajapar cajaimagen"
+    "cajaimagen cajadatos";
      
       /* Formateo */
       width: 100%;
