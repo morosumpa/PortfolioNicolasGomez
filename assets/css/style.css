@@ -1,18 +1,17 @@
-/* MOBILE FIRST */
 #contenedor {
   /* Rejilla de paginación */
   display: grid;
   grid-template-rows: 1fr ;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas:
-  "cajaimpar"
-    "cajapar"
-    "cajaimpar"
-    "cajapar"
-    "cajaimpar"
-    "cajadatos"
-    "cajapar"
-    "cajaimpar";
+  "cajaimpar cajaimagen"
+    "cajaimagen cajapar"
+    "cajaimpar cajaimagen"
+    "cajaimagen cajapar"
+    "cajaimpar cajaimagen"
+    "cajaimagen cajadatos"
+    "cajapar cajaimagen"
+    "cajaimagen cajaimpar";
  
   /* Formateo */
   width: 100%;
@@ -59,7 +58,11 @@ body{
     color: black;
     text-align: center;
 }
+.cajaimagen{
+  grid-area: cajaimagen;
+  background-color: #EDECED;
 
+}
 .imglogo{
   width: 80px;
   height: 40px ;
@@ -73,14 +76,15 @@ body{
       grid-template-rows: 1fr ;
       grid-template-columns: 1fr;
       grid-template-areas:
-      "cajaimpar"
-        "cajapar"
-        "cajaimpar"
-        "cajapar"
-        "cajaimpar"
-        "cajadatos"
-        "cajapar"
-        "cajaimpar";
+      "cajaimpar cajaimagen"
+    "cajaimagen cajapar"
+    "cajaimpar cajaimagen"
+    "cajaimagen cajapar"
+    "cajaimpar cajaimagen"
+    "cajaimagen cajadatos"
+    "cajapar cajaimagen"
+    "cajaimagen cajaimpar";
+ 
      
       /* Formateo */
       width: 100%;
@@ -96,14 +100,15 @@ body{
       grid-template-rows: 1fr ;
       grid-template-columns: 1fr;
       grid-template-areas:
-        "cajaimpar"
-        "cajapar"
-        "cajaimpar"
-        "cajapar"
-        "cajaimpar"
-        "cajadatos"
-        "cajapar"
-        "cajaimpar";
+      "cajaimpar cajaimagen"
+      "cajaimagen cajapar"
+      "cajaimpar cajaimagen"
+      "cajaimagen cajapar"
+      "cajaimpar cajaimagen"
+      "cajaimagen cajadatos"
+      "cajapar cajaimagen"
+      "cajaimagen cajaimpar";
+   
      
       /* Formateo */
       width: 100%;
