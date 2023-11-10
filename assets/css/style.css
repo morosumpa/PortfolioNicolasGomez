@@ -1,17 +1,27 @@
-#contenedor {
+body{
+  background-color: #EDECED;
+}
+
+.contenedor {
   /* Rejilla de paginación */
   display: grid;
-  grid-template-rows: 1fr ;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+
   grid-template-areas:
-  "cajaimpar cajaimagen"
-    "cajaimagen cajapar"
-    "cajaimpar cajaimagen"
-    "cajaimagen cajapar"
-    "cajaimpar cajaimagen"
-    "cajaimagen cajadatos"
-    "cajapar cajaimagen"
-    "cajaimagen cajaimpar";
+  "cajaimpar"
+  " cajaimagen"
+    "cajaimagen"
+    "cajapar"
+    "cajaimpar"
+    " cajaimagen"
+    "cajaimagen"
+    " cajapar"
+    "cajaimpar"
+    " cajaimagen"
+    "cajaimagen"
+    " cajadatos"
+    "cajaimagen "
+    "cajaimpar";
  
   /* Formateo */
   width: 100%;
@@ -20,9 +30,6 @@
 img{
   width: 100%;
   height: auto;;
-}
-body{
-  background-color: #EDECED;
 }
 .bg-footer{
   background-color: #EDECED;
@@ -71,10 +78,10 @@ body{
 /* PARA TABLETS */
 
 @media only screen and (min-width: 768px) {   
-    #contenedor {   
+    .contenedor {   
       display: grid;
-      grid-template-rows: 1fr ;
-      grid-template-columns: 1fr;
+      grid-template-columns: 500px 500px;
+  
       grid-template-areas:
       "cajaimpar cajaimagen"
     "cajaimagen cajapar"
@@ -82,7 +89,6 @@ body{
     "cajaimagen cajapar"
     "cajaimpar cajaimagen"
     "cajaimagen cajadatos"
-    "cajapar cajaimagen"
     "cajaimagen cajaimpar";
  
      
@@ -95,10 +101,10 @@ body{
 /* PARA PANTALLAS GRANDES */
 
 @media only screen and (min-width: 1024px)  {   
-  #contenedor {   
+  .contenedor {   
       display: grid;
-      grid-template-rows: 1fr ;
-      grid-template-columns: 1fr;
+      grid-template-columns: 500px 500px;
+    
       grid-template-areas:
       "cajaimpar cajaimagen"
       "cajaimagen cajapar"
@@ -106,7 +112,6 @@ body{
       "cajaimagen cajapar"
       "cajaimpar cajaimagen"
       "cajaimagen cajadatos"
-      "cajapar cajaimagen"
       "cajaimagen cajaimpar";
    
      

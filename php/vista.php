@@ -49,12 +49,18 @@
     </div>
     </nav>
 </header>
-  <div id="contenedor">   
+  <div class="contenedor">   
   <main>
   <section class="cajapar">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quos minus? Ipsum a possimus dolorum. Culpa ipsam quisquam vitae, cumque dicta, sunt impedit molestias corporis repudiandae, quos nihil. Delectus, sed?</p>
     </section>
+    <section class="cajaimagen">
+    <img src="../img/logoportfolio-transformed.png">
+   </section>
 
+    <section class="cajaimagen">
+    <img src="../img/logoportfolio-transformed.png">
+    </section>
     <section class="cajaimpar">
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quos minus? Ipsum a possimus dolorum. Culpa ipsam quisquam vitae, cumque dicta, sunt impedit molestias corporis repudiandae, quos nihil. Delectus, sed?</p>
     </section>
@@ -62,15 +68,28 @@
     <section class="cajapar">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quos minus? Ipsum a possimus dolorum. Culpa ipsam quisquam vitae, cumque dicta, sunt impedit molestias corporis repudiandae, quos nihil. Delectus, sed?</p>
     </section>
+    <section class="cajaimagen">
+    <img src="../img/logoportfolio-transformed.png">
+  </section>
 
+    <section class="cajaimagen">
+    <img src="../img/logoportfolio-transformed.png">
+  </section>
     <section class="cajaimpar">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quos minus? Ipsum a possimus dolorum. Culpa ipsam quisquam vitae, cumque dicta, sunt impedit molestias corporis repudiandae, quos nihil. Delectus, sed?</p>
     </section>
 
+    
     <section class="cajapar">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quos minus? Ipsum a possimus dolorum. Culpa ipsam quisquam vitae, cumque dicta, sunt impedit molestias corporis repudiandae, quos nihil. Delectus, sed?</p>
     </section>
-
+<section class="cajaimagen">
+<img src="../img/logoportfolio-transformed.png">
+</section>
+    
+    <section class="cajaimagen">
+    <img src="../img/logoportfolio-transformed.png">
+   </section>
     <section class="cajaimpar">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quos minus? Ipsum a possimus dolorum. Culpa ipsam quisquam vitae, cumque dicta, sunt impedit molestias corporis repudiandae, quos nihil. Delectus, sed?</p>
     </section>
@@ -78,6 +97,9 @@
     <section class="cajadatos">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quos minus? Ipsum a possimus dolorum. Culpa ipsam quisquam vitae, cumque dicta, sunt impedit molestias corporis repudiandae, quos nihil. Delectus, sed?</p>
     </section>
+    <section class="cajaimagen">
+    <img src="../img/logoportfolio-transformed.png">
+   </section>
 
   </main>
 </div>
