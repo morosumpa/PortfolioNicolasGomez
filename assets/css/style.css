@@ -8,6 +8,7 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr ;
   grid-template-areas:
+    "imginicio"
     "txt1"
     "cajaimg"
     "txt2"
@@ -30,7 +31,9 @@ img {
   width: 100%;
   height: auto;
 }
-
+.imginicio{
+  background-color: #EDECED;
+}
 .bg-footer {
   background-color: #EDECED;
 }
