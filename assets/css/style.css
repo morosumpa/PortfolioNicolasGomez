@@ -29,7 +29,6 @@ body {
 img {
   width: 100%;
   height: auto;
-  ;
 }
 
 .bg-footer {
@@ -91,7 +90,7 @@ img {
 }
 .cajaimg2{
   grid-area: cajaimg2;
-  background-color: #EDECED !important;
+  background-color: #f0e9db !important;
 }
 .cajaimg3{
   grid-area: cajaimg3;
@@ -99,7 +98,7 @@ img {
 }
 .cajaimg4{
   grid-area: cajaimg4;
-  background-color: #EDECED !important;
+  background-color: #f0e9db !important;
 }
 .cajaimg5{
   grid-area: cajaimg5;
@@ -107,7 +106,7 @@ img {
 }
 .cajaimg6{
   grid-area: cajaimg6;
-  background-color: #EDECED !important;
+  background-color: #4d4d4d !important;
 }
 
 .imglogo {
@@ -137,43 +136,32 @@ img {
 .cajaimg{
   grid-area: cajaimg;
   background-color: #EDECED !important;
- width: 300px;
- height: auto;
+
  justify-content: right;
 }
 .cajaimg2{
   grid-area: cajaimg2;
   background-color: #EDECED !important;
-  width: 300px;
-  height: auto;
   justify-content: left;
 }
 .cajaimg3{
   grid-area: cajaimg3;
   background-color: #EDECED !important;
-  width: 300px;
-  height: auto;
   align-items: right;
 }
 .cajaimg4{
   grid-area: cajaimg4;
   background-color: #EDECED !important;
-  width: 300px;
-  height: auto;
   justify-content: left;
 }
 .cajaimg5{
   grid-area: cajaimg5;
   background-color: #EDECED !important;
-  width: 300px;
-  height: auto;
   justify-content: right;
 }
 .cajaimg6{
   grid-area: cajaimg6;
   background-color: #EDECED !important;
-  width: 300px;
-  height: auto;
   justify-content: left;
 }
 
@@ -222,7 +210,7 @@ img {
 /* PARA PANTALLAS GRANDES */
 
 @media only screen and (min-width: 1024px) {
-    .contenedor {
+  .contenedor {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(6, 1fr);
@@ -240,43 +228,31 @@ img {
 .cajaimg{
   grid-area: cajaimg;
   background-color: #EDECED !important;
- width: 300px;
- height: auto;
  justify-content: right;
 }
 .cajaimg2{
   grid-area: cajaimg2;
   background-color: #EDECED !important;
-  width: 300px;
-  height: auto;
   justify-content: left;
 }
 .cajaimg3{
   grid-area: cajaimg3;
   background-color: #EDECED !important;
-  width: 300px;
-  height: auto;
   align-items: right;
 }
 .cajaimg4{
   grid-area: cajaimg4;
   background-color: #EDECED !important;
-  width: 300px;
-  height: auto;
   justify-content: left;
 }
 .cajaimg5{
   grid-area: cajaimg5;
   background-color: #EDECED !important;
-  width: 300px;
-  height: auto;
   justify-content: right;
 }
 .cajaimg6{
   grid-area: cajaimg6;
   background-color: #EDECED !important;
-  width: 300px;
-  height: auto;
   justify-content: left;
 }
 
