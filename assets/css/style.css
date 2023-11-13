@@ -1,4 +1,4 @@
-body{
+body {
   background-color: #EDECED;
 }
 
@@ -6,107 +6,238 @@ body{
   /* Rejilla de paginación */
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(12, 1fr);
+  grid-template-rows: 1fr ;
   grid-template-areas:
-  "cajapar"
-  " cajaimagen"
-    "cajaimagen"
-    "cajaimpar"
-    "cajapar"
-    " cajaimagen"
-    "cajaimagen"
-    " cajaimpar"
-    "cajapar"
-    " cajaimagen"
-    "cajaimagen"
-    " cajadatos";
- 
+    "txt1"
+    "cajaimg"
+    "txt2"
+    "cajaimg2"
+    "txt3"
+    "cajaimg3"
+    "txt4"
+    "cajaimg4"
+    "txt5"
+    "cajaimg5"
+    "txtdatos"
+    "cajaimg6";
+
   /* Formateo */
   width: 100%;
- 
+
 }
-img{
+
+img {
   width: 100%;
-  height: auto;;
+  height: auto;
+  ;
 }
-.bg-footer{
+
+.bg-footer {
   background-color: #EDECED;
 }
-.bg-header{
+
+.bg-header {
   background-color: #A6AAAD;
 }
-.bg-copyright{
+
+.bg-copyright {
   background-color: #A6AAAD;
 }
-.cajaimpar {
-  grid-area: cajaimpar;
+
+.txt1 {
+  grid-area: txt1;
   background-color: #EDECED !important;
   color: #020202 !important;
+  text-align: center;
 }
 
-.cajapar {
-  grid-area: cajapar;
+.txt2 {
+  grid-area: txt2;
   background-color: #f0e9db !important;
   color: #020202 !important;
+  text-align: center;
+}
+.txt3 {
+  grid-area: txt3;
+  background-color: #EDECED !important;
+  color: #020202 !important;
+  text-align: center;
+}
+.txt4 {
+  grid-area: txt4;
+  background-color: #f0e9db !important;
+  color: #020202 !important;
+  text-align: center;
+}
+.txt5 {
+  grid-area: txt5;
+  background-color: #EDECED !important;
+  color: #020202 !important;
+  text-align: center;
 }
 
-.cajadatos {   
-  grid-area: cajadatos;   
-  background-color:#4d4d4d;
-  color: #ffffff;
-}   
-
-.cajaimagen{
-  grid-area: cajaimagen;
-  background-color: #EDECED;
-  width: 150px;
-  height: 150px ;
+.txtdatos {
+  grid-area: txtdatos;
+  background-color: #4d4d4d !important;
+  color: #ffffff !important;
+  width: auto;
+  height: auto;
+  text-align: center;
 }
 
-.imglogo{
+.cajaimg{
+  grid-area: cajaimg;
+  background-color: #EDECED !important;
+}
+.cajaimg2{
+  grid-area: cajaimg2;
+  background-color: #EDECED !important;
+}
+.cajaimg3{
+  grid-area: cajaimg3;
+  background-color: #EDECED !important;
+}
+.cajaimg4{
+  grid-area: cajaimg4;
+  background-color: #EDECED !important;
+}
+.cajaimg5{
+  grid-area: cajaimg5;
+  background-color: #EDECED !important;
+}
+.cajaimg6{
+  grid-area: cajaimg6;
+  background-color: #EDECED !important;
+}
+
+.imglogo {
   width: 80px;
-  height: 40px ;
+  height: 40px;
 }
 
 /* PARA TABLETS */
 
-@media only screen and (min-width: 768px) {   
-    .contenedor {   
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: repeat(6, 1fr);
-      grid-template-areas:
-      "cajapar cajaimagen"
-    "cajaimagen cajaimpar"
-    "cajapar cajaimagen"
-    "cajaimagen cajaimpar"
-    "cajapar cajaimagen"
-    "cajaimagen cajadatos";
- 
-     
-      /* Formateo */
-      width: 100%;
-      
-    }   
+@media only screen and (min-width: 768px) {
+  .conteendor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "txt2 cajaimg2"
+      "cajaimg tx1"
+      "txt4 cajaimg4"
+      "cajaimg3 txt3"
+      "txt5 cajaimg5"
+      "cajaimg6 cajadatos";
+
+
+    
+    width: 100%;
+
+  }
+  
+.cajaimg{
+  grid-area: cajaimg;
+  background-color: #EDECED !important;
+ width: 300px;
+ height: auto;
+ align-items: right;
+}
+.cajaimg2{
+  grid-area: cajaimg2;
+  background-color: #EDECED !important;
+  width: 300px;
+  height: auto;
+  align-items: left;
+}
+.cajaimg3{
+  grid-area: cajaimg3;
+  background-color: #EDECED !important;
+  width: 300px;
+  height: auto;
+  align-items: right;
+}
+.cajaimg4{
+  grid-area: cajaimg4;
+  background-color: #EDECED !important;
+  width: 300px;
+  height: auto;
+  align-items: left;
+}
+.cajaimg5{
+  grid-area: cajaimg5;
+  background-color: #EDECED !important;
+  width: 300px;
+  height: auto;
+  align-items: right;
+}
+.cajaimg6{
+  grid-area: cajaimg6;
+  background-color: #EDECED !important;
+  width: 300px;
+  height: auto;
+  align-items: left;
+}
+
+.txt1 {
+  grid-area: txt1;
+  background-color: #EDECED !important;
+  color: #020202 !important;
+  text-align: left;
+}
+
+.txt2 {
+  grid-area: txt2;
+  background-color: #f0e9db !important;
+  color: #020202 !important;
+  text-align: right;
+}
+.txt3 {
+  grid-area: txt3;
+  background-color: #EDECED !important;
+  color: #020202 !important;
+  text-align: left;
+}
+.txt4 {
+  grid-area: txt4;
+  background-color: #f0e9db !important;
+  color: #020202 !important;
+  text-align: right;
+}
+.txt5 {
+  grid-area: txt5;
+  background-color: #EDECED !important;
+  color: #020202 !important;
+  text-align: left;
+}
+
+.txtdatos {
+  grid-area: txtdatos;
+  background-color: #4d4d4d !important;
+  color: #ffffff !important;
+  width: auto;
+  height: auto;
+  text-align: right;
+}
 }
 
 /* PARA PANTALLAS GRANDES */
-
-@media only screen and (min-width: 1024px)  {   
-  .contenedor {   
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: repeat(6, 1fr);
-      grid-template-areas:
+/*
+@media only screen and (min-width: 1024px) {
+  .contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
       "cajapar cajaimagen"
-    "cajaimagen cajaimpar"
-    "cajapar cajaimagen"
-    "cajaimagen cajaimpar"
-    "cajapar cajaimagen"
-    "cajaimagen cajadatos";
-     
-      /* Formateo */
-      width: 100%;
-     
-    }   
-} 
+      "cajaimagen cajaimpar"
+      "cajapar cajaimagen"
+      "cajaimagen cajaimpar"
+      "cajapar cajaimagen"
+      "cajaimagen cajadatos";
+
+  
+    width: 100%;
+
+  }
+}
