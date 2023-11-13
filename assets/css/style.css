@@ -117,38 +117,36 @@ img {
 
 /* PARA TABLETS */
 
+/* Estilos para tabletas */
 @media only screen and (min-width: 768px) {
-  .conteendor {
+  .contenedor {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
     grid-template-areas:
-      "txt2 cajaimg2"
-      "cajaimg tx1"
-      "txt4 cajaimg4"
-      "cajaimg3 txt3"
+      "txt1 cajaimg"
+      "cajaimg2 txt2"
+      "txt3 cajaimg3"
+      " cajaimg4 txt4"
       "txt5 cajaimg5"
-      "cajaimg6 cajadatos";
-
-
-    
+      "cajaimg6 txtdatos ";
     width: 100%;
-
   }
+}
   
 .cajaimg{
   grid-area: cajaimg;
   background-color: #EDECED !important;
  width: 300px;
  height: auto;
- align-items: right;
+ justify-content: right;
 }
 .cajaimg2{
   grid-area: cajaimg2;
   background-color: #EDECED !important;
   width: 300px;
   height: auto;
-  align-items: left;
+  justify-content: left;
 }
 .cajaimg3{
   grid-area: cajaimg3;
@@ -162,53 +160,53 @@ img {
   background-color: #EDECED !important;
   width: 300px;
   height: auto;
-  align-items: left;
+  justify-content: left;
 }
 .cajaimg5{
   grid-area: cajaimg5;
   background-color: #EDECED !important;
   width: 300px;
   height: auto;
-  align-items: right;
+  justify-content: right;
 }
 .cajaimg6{
   grid-area: cajaimg6;
   background-color: #EDECED !important;
   width: 300px;
   height: auto;
-  align-items: left;
+  justify-content: left;
 }
 
 .txt1 {
   grid-area: txt1;
   background-color: #EDECED !important;
   color: #020202 !important;
-  text-align: left;
+  justify-content: left;
 }
 
 .txt2 {
   grid-area: txt2;
   background-color: #f0e9db !important;
   color: #020202 !important;
-  text-align: right;
+  justify-content: right;
 }
 .txt3 {
   grid-area: txt3;
   background-color: #EDECED !important;
   color: #020202 !important;
-  text-align: left;
+  justify-content: left;
 }
 .txt4 {
   grid-area: txt4;
   background-color: #f0e9db !important;
   color: #020202 !important;
-  text-align: right;
+  justify-content: right;
 }
 .txt5 {
   grid-area: txt5;
   background-color: #EDECED !important;
   color: #020202 !important;
-  text-align: left;
+  justify-content: left;
 }
 
 .txtdatos {
@@ -217,27 +215,108 @@ img {
   color: #ffffff !important;
   width: auto;
   height: auto;
-  text-align: right;
+  justify-content: right;
 }
-}
+
 
 /* PARA PANTALLAS GRANDES */
-/*
+
 @media only screen and (min-width: 1024px) {
-  .contenedor{
+    .contenedor {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
     grid-template-areas:
-      "cajapar cajaimagen"
-      "cajaimagen cajaimpar"
-      "cajapar cajaimagen"
-      "cajaimagen cajaimpar"
-      "cajapar cajaimagen"
-      "cajaimagen cajadatos";
-
-  
+      "txt1 cajaimg"
+      "cajaimg2 txt2"
+      "txt3 cajaimg3"
+      " cajaimg4 txt4"
+      "txt5 cajaimg5"
+      "cajaimg6 txtdatos ";
     width: 100%;
-
   }
+}
+  
+.cajaimg{
+  grid-area: cajaimg;
+  background-color: #EDECED !important;
+ width: 300px;
+ height: auto;
+ justify-content: right;
+}
+.cajaimg2{
+  grid-area: cajaimg2;
+  background-color: #EDECED !important;
+  width: 300px;
+  height: auto;
+  justify-content: left;
+}
+.cajaimg3{
+  grid-area: cajaimg3;
+  background-color: #EDECED !important;
+  width: 300px;
+  height: auto;
+  align-items: right;
+}
+.cajaimg4{
+  grid-area: cajaimg4;
+  background-color: #EDECED !important;
+  width: 300px;
+  height: auto;
+  justify-content: left;
+}
+.cajaimg5{
+  grid-area: cajaimg5;
+  background-color: #EDECED !important;
+  width: 300px;
+  height: auto;
+  justify-content: right;
+}
+.cajaimg6{
+  grid-area: cajaimg6;
+  background-color: #EDECED !important;
+  width: 300px;
+  height: auto;
+  justify-content: left;
+}
+
+.txt1 {
+  grid-area: txt1;
+  background-color: #EDECED !important;
+  color: #020202 !important;
+  justify-content: left;
+}
+
+.txt2 {
+  grid-area: txt2;
+  background-color: #f0e9db !important;
+  color: #020202 !important;
+  justify-content: right;
+}
+.txt3 {
+  grid-area: txt3;
+  background-color: #EDECED !important;
+  color: #020202 !important;
+  justify-content: left;
+}
+.txt4 {
+  grid-area: txt4;
+  background-color: #f0e9db !important;
+  color: #020202 !important;
+  justify-content: right;
+}
+.txt5 {
+  grid-area: txt5;
+  background-color: #EDECED !important;
+  color: #020202 !important;
+  justify-content: left;
+}
+
+.txtdatos {
+  grid-area: txtdatos;
+  background-color: #4d4d4d !important;
+  color: #ffffff !important;
+  width: auto;
+  height: auto;
+  justify-content: right;
 }
