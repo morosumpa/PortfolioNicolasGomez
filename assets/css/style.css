@@ -38,16 +38,17 @@ img{
 .bg-copyright{
   background-color: #A6AAAD;
 }
-.cajaimpar {   
-    grid-area: cajaimpar;   
-    background-color: #EDECED;
-    color: #020202;
-}   
-.cajapar {   
-  grid-area: cajapar;   
-  background-color:#f0e9db;
-  color: #020202;
-}   
+.cajaimpar {
+  grid-area: cajaimpar;
+  background-color: #EDECED !important;
+  color: #020202 !important;
+}
+
+.cajapar {
+  grid-area: cajapar;
+  background-color: #f0e9db !important;
+  color: #020202 !important;
+}
 
 .cajadatos {   
   grid-area: cajadatos;   
