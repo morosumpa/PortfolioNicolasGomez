@@ -128,94 +128,11 @@ img {
   height: 40px;
 }
 
-.contenedortech {
-  /* Rejilla de paginación */
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(15, 1fr);
-  grid-template-areas:
-    "iconhtml"
-    "barrahtml"
-    "txthtml"
-    "iconcss"
-    "barracss"
-    "txtcss"
-    "iconjs"
-    "barrajs"
-    "txtjs"
-    "iconphp"
-    "barraphp"
-    "txtphp"
-    "iconjava"
-    "barrajava"
-    "txtjava";
-  /* Formateo */
-  width: 100%;
-}
-
 .iconos {
   width: 50px;
   height: 50px;
 }
 
-.iconhtml{
-
-}
-.barrahtml{
-
-}
-
-.txthtml{
-
-}
-
-.iconcss{
-
-}
-
-.barracss{
-
-}
-
-.txtcss{
-
-}
-
-.iconjs{
-
-}
-
-.barrajs{
-
-}
-
-.txtj{
-
-}
-
-.iconphp{
-
-}
-
-.barraphp{
-
-}
-
-.txtphp{
-
-}
-
-.iconjava{
-
-}
-
-.barrajava{
-
-}
-
-.txtjava{
-  
-}
 
 /* PARA TABLETS */
 
@@ -224,7 +141,7 @@ img {
   .contenedor {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
       "imginicio imginicio"
       "txt1 cajaimg"
@@ -317,26 +234,6 @@ img {
     justify-content: right;
   }
 
-  .contenedortech {
-    /* Rejilla de paginación */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(10, 1fr);
-    ;
-    grid-template-areas:
-      "iconhtml barrahtml"
-      "txthtml txthtml"
-      "iconcss barracss"
-      "txtcss txtcss"
-      "iconjs barrajs"
-      "txtjs txtjs"
-      "iconphp barraphp"
-      "txtphp txtphp"
-      "iconjava barrajava"
-      "txtjava txtjava";
-    /* Formateo */
-    width: 100%;
-  }
 }
 
 /* PARA PANTALLAS GRANDES */
@@ -345,7 +242,7 @@ img {
   .contenedor {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
       "imginicio imginicio"
       "txt1 cajaimg"
@@ -437,24 +334,4 @@ img {
     justify-content: right;
   }
 
-  .contenedortech {
-    /* Rejilla de paginación */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(10, 1fr);
-    ;
-    grid-template-areas:
-      "iconhtml barrahtml"
-      "txthtml txthtml"
-      "iconcss barracss"
-      "txtcss txtcss"
-      "iconjs barrajs"
-      "txtjs txtjs"
-      "iconphp barraphp"
-      "txtphp txtphp"
-      "iconjava barrajava"
-      "txtjava txtjava";
-    /* Formateo */
-    width: 100%;
-  }
 }
