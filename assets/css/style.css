@@ -7,7 +7,7 @@ body {
   /* Rejilla de paginación */
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1.2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  grid-template-rows: 1.2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
   grid-template-areas:
     "imginicio"
     "txt1"
@@ -18,10 +18,7 @@ body {
     "cajaimg3"
     "txt4"
     "cajaimg4"
-    "txt5"
-    "cajaimg5"
-    "txtdatos"
-    "cajaimg6";
+    "txtdatos";
 
   /* Formateo */
   width: 100%;
@@ -91,13 +88,6 @@ img {
   text-align: center;
 }
 
-.txt5 {
-  grid-area: txt5;
-  background-color: #EDECED !important;
-  color: #020202 !important;
-  text-align: center;
-}
-
 .txtdatos {
   grid-area: txtdatos;
   background-color: #4d4d4d !important;
@@ -128,24 +118,14 @@ img {
   background-color: #FFC107 !important;
 }
 
-.cajaimg5 {
-  grid-area: cajaimg5;
-  background-color: #EDECED !important;
-}
-
-.cajaimg6 {
-  grid-area: cajaimg6;
-  background-color: #4d4d4d !important;
-}
-
 .imglogo {
   width: 80px;
   height: 40px;
 }
 
 .iconos {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
 }
 
 
@@ -156,15 +136,14 @@ img {
   .contenedor {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1.2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 1.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
     grid-template-areas:
       "imginicio imginicio"
       "txt1 cajaimg"
       "cajaimg2 txt2"
       "txt3 cajaimg3"
       " cajaimg4 txt4"
-      "txt5 cajaimg5"
-      "cajaimg6 txtdatos ";
+      "txtdatos txtdatos";
     width: 100%;
   }
 
@@ -190,18 +169,6 @@ img {
   .cajaimg4 {
     grid-area: cajaimg4;
     background-color: #FFC107 !important;
-    justify-content: left;
-  }
-
-  .cajaimg5 {
-    grid-area: cajaimg5;
-    background-color: #EDECED !important;
-    justify-content: right;
-  }
-
-  .cajaimg6 {
-    grid-area: cajaimg6;
-    background-color: #EDECED !important;
     justify-content: left;
   }
 
@@ -233,13 +200,6 @@ img {
     justify-content: right;
   }
 
-  .txt5 {
-    grid-area: txt5;
-    background-color: #EDECED !important;
-    color: #020202 !important;
-    justify-content: left;
-  }
-
   .txtdatos {
     grid-area: txtdatos;
     background-color: #4d4d4d !important;
@@ -257,15 +217,14 @@ img {
   .contenedor {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1.2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr;
     grid-template-areas:
       "imginicio imginicio"
       "txt1 cajaimg"
       "cajaimg2 txt2"
       "txt3 cajaimg3"
       " cajaimg4 txt4"
-      "txt5 cajaimg5"
-      "cajaimg6 txtdatos ";
+      "txtdatos txtdatos";
     width: 100%;
   }
 
@@ -293,18 +252,6 @@ img {
     justify-content: left;
   }
 
-  .cajaimg5 {
-    grid-area: cajaimg5;
-    background-color: #EDECED !important;
-    justify-content: right;
-  }
-
-  .cajaimg6 {
-    grid-area: cajaimg6;
-    background-color: #EDECED !important;
-    align-items: center;
-  }
-
   .txt1 {
     grid-area: txt1;
     background-color: #EDECED !important;
@@ -331,13 +278,6 @@ img {
     background-color: #FFC107 !important;
     color: #020202 !important;
     justify-content: right;
-  }
-
-  .txt5 {
-    grid-area: txt5;
-    background-color: #EDECED !important;
-    color: #020202 !important;
-    justify-content: left;
   }
 
   .txtdatos {
