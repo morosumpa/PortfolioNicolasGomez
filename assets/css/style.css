@@ -19,7 +19,7 @@ body {
     "txt4"
     "cajaimg4"
     "txtdatos";
-
+padding: 1.5vh;
   /* Formateo */
   width: 100%;
   font-size: 20px;
@@ -359,6 +359,9 @@ transform: rotate(360deg);
     background-color: #5382A1;
   }
 }
+.txt2, .txt1, .txt3, .txt4, .txtdatos{
+  padding: 1vh;
+}
 
 /* PARA TABLETS */
 
@@ -377,6 +380,7 @@ transform: rotate(360deg);
       "txtdatos txtdatos";
     width: 100%;
     font-size: 20px;
+    padding: 1.5vh;
   }
 
   .cajaimg {
@@ -635,6 +639,10 @@ transform: rotate(360deg);
       background-color: #5382A1;
     }
   }
+
+  .txt2, .txt1, .txt3, .txt4, .txtdatos{
+    padding: 1.25vh;
+  }
 }
 
 /* PARA PANTALLAS GRANDES */
@@ -653,6 +661,7 @@ transform: rotate(360deg);
       "txtdatos txtdatos";
     width: 100%;
     font-size: 25px;
+    padding: 2.5vh;
   }
 
   .cajaimg {
@@ -714,6 +723,10 @@ transform: rotate(360deg);
     width: auto;
     height: auto;
     justify-content: right;
+  }
+
+  .txt2, .txt1, .txt3, .txt4, .txtdatos{
+    padding: 1.25vh;
   }
 
 }
