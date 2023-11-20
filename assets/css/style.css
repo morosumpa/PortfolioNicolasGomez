@@ -22,7 +22,7 @@ body {
 
   /* Formateo */
   width: 100%;
-
+  font-size: 20px;
 }
 
 table {
@@ -52,6 +52,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .imginicio img {
@@ -60,7 +61,35 @@ img {
   width: auto;
   height: auto;
 }
+ 
+.imgpc {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-out;
+}
 
+.imgpc:hover {
+  transform: scale(1.1);
+  /* Ajusta la escala según tus necesidades */
+}
+
+/*
+.bright {
+  position: absolute;
+ background-image: url('../../img/brightness.jpg');
+ background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease-out;
+}
+
+.imgpc:hover + .bright {
+  opacity: 1;
+}
+*/
 .bg-footer {
   background-color: #EDECED;
 }
@@ -136,6 +165,14 @@ img {
   height: 40px;
 }
 
+/*
+.imgpc:hover{  border-radius: 50%;
+-webkit-border-radius: 50%;
+box-shadow: 0px 0px 15px 15px #e6e6e6;
+-webkit-box-shadow:#e6e6e6;
+transform: rotate(360deg);
+-webkit-transform: rotate(360deg);}
+*/
 .iconos {
   width: 80px;
   height: 80px;
@@ -146,6 +183,7 @@ img {
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 10px;
+  margin-top: 25%;
   /* Espacio entre las imágenes */
 }
 
@@ -171,7 +209,7 @@ img {
 }
 
 .progress-moved .progress-bar1 {
-  width: 70%;
+  width: 85%;
   background-color: #FB8028;
   animation: progressAnimation 4s;
 }
@@ -183,7 +221,7 @@ img {
   }
 
   100% {
-    width: 70%;
+    width: 85%;
     background-color: #FB8028;
   }
 }
@@ -204,7 +242,7 @@ img {
 }
 
 .progress-moved .progress-bar2 {
-  width: 70%;
+  width: 75%;
   background-color: #264DE4;
   animation: progressAnimation 4s;
 }
@@ -216,7 +254,7 @@ img {
   }
 
   100% {
-    width: 70%;
+    width: 75%;
     background-color: #264DE4;
   }
 }
@@ -238,7 +276,7 @@ img {
 }
 
 .progress-moved .progress-bar3 {
-  width: 75%;
+  width: 70%;
   background-color: #E9CA32;
   animation: progressAnimation 4s;
 }
@@ -250,7 +288,7 @@ img {
   }
 
   100% {
-    width: 75%;
+    width: 70%;
     background-color: #E9CA32;
   }
 }
@@ -271,7 +309,7 @@ img {
 }
 
 .progress-moved .progress-bar4 {
-  width: 75%;
+  width: 70%;
   background-color: #8892BF;
   animation: progressAnimation 4s;
 }
@@ -283,7 +321,7 @@ img {
   }
 
   100% {
-    width: 75%;
+    width: 70%;
     background-color: #8892BF;
   }
 }
@@ -305,7 +343,7 @@ img {
 }
 
 .progress-moved .progress-bar5 {
-  width: 70%;
+  width: 80%;
   background-color: #5382A1;
   animation: progressAnimation 4s;
 }
@@ -317,7 +355,7 @@ img {
   }
 
   100% {
-    width: 70%;
+    width: 80%;
     background-color: #5382A1;
   }
 }
@@ -338,6 +376,7 @@ img {
       " cajaimg4 txt4"
       "txtdatos txtdatos";
     width: 100%;
+    font-size: 20px;
   }
 
   .cajaimg {
@@ -446,7 +485,7 @@ img {
   }
 
   .progress-moved .progress-bar1 {
-    width: 70%;
+    width: 85%;
     background-color: #FB8028;
     animation: progressAnimation 4s;
   }
@@ -458,7 +497,7 @@ img {
     }
 
     100% {
-      width: 70%;
+      width: 85%;
       background-color: #FB8028;
     }
   }
@@ -479,7 +518,7 @@ img {
   }
 
   .progress-moved .progress-bar2 {
-    width: 70%;
+    width: 75%;
     background-color: #264DE4;
     animation: progressAnimation 4s;
   }
@@ -491,7 +530,7 @@ img {
     }
 
     100% {
-      width: 70%;
+      width: 75%;
       background-color: #264DE4;
     }
   }
@@ -513,7 +552,7 @@ img {
   }
 
   .progress-moved .progress-bar3 {
-    width: 75%;
+    width: 70%;
     background-color: #E9CA32;
     animation: progressAnimation 4s;
   }
@@ -525,7 +564,7 @@ img {
     }
 
     100% {
-      width: 75%;
+      width: 70%;
       background-color: #E9CA32;
     }
   }
@@ -546,7 +585,7 @@ img {
   }
 
   .progress-moved .progress-bar4 {
-    width: 75%;
+    width: 70%;
     background-color: #8892BF;
     animation: progressAnimation 4s;
   }
@@ -558,10 +597,11 @@ img {
     }
 
     100% {
-      width: 75%;
+      width: 70%;
       background-color: #8892BF;
     }
   }
+
 
   .progress5 {
     padding: 6px;
@@ -579,7 +619,7 @@ img {
   }
 
   .progress-moved .progress-bar5 {
-    width: 70%;
+    width: 80%;
     background-color: #5382A1;
     animation: progressAnimation 4s;
   }
@@ -591,7 +631,7 @@ img {
     }
 
     100% {
-      width: 70%;
+      width: 80%;
       background-color: #5382A1;
     }
   }
@@ -612,6 +652,7 @@ img {
       " cajaimg4 txt4"
       "txtdatos txtdatos";
     width: 100%;
+    font-size: 25px;
   }
 
   .cajaimg {
