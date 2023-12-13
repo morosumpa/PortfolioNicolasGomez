@@ -1,117 +1,732 @@
-#contenedor {
+body {
+  background-color: #EDECED;
+  font-family: sans-serif;
+}
+
+.contenedor {
   /* Rejilla de paginación */
   display: grid;
-  grid-template-rows: 1fr ;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
   grid-template-areas:
-  "cajaimpar cajaimagen"
-    "cajaimagen cajapar"
-    "cajaimpar cajaimagen"
-    "cajaimagen cajapar"
-    "cajaimpar cajaimagen"
-    "cajaimagen cajadatos"
-    "cajapar cajaimagen"
-    "cajaimagen cajaimpar";
- 
+    "imginicio"
+    "txt1"
+    "cajaimg"
+    "txt2"
+    "cajaimg2"
+    "txt3"
+    "cajaimg3"
+    "txt4"
+    "cajaimg4"
+    "txtdatos";
+padding: 1.5vh;
   /* Formateo */
   width: 100%;
- 
+  font-size: 20px;
 }
-img{
+
+table {
+  border-collapse: collapse;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 22%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+
+table,
+th,
+td {
+  border: none;
+}
+
+img {
   width: 100%;
-  height: auto;;
+  height: auto;
 }
-body{
+
+.imginicio {
+  background-color: #EDECED;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.imginicio img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+ 
+.imgpc {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-out;
+}
+
+.imgpc:hover {
+  transform: scale(1.1);
+  /* Ajusta la escala según tus necesidades */
+}
+
+/*
+.bright {
+  position: absolute;
+ background-image: url('../../img/brightness.jpg');
+ background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease-out;
+}
+
+.imgpc:hover + .bright {
+  opacity: 1;
+}
+*/
+.bg-footer {
   background-color: #EDECED;
 }
-.bg-footer{
-  background-color: #EDECED;
-}
-.bg-header{
+
+.bg-header {
   background-color: #A6AAAD;
 }
-.bg-copyright{
+
+.bg-copyright {
   background-color: #A6AAAD;
 }
-.cajaimpar {   
-    grid-area: cajaimpar;   
-    background-color: #EDECED;
-    color: #020202;
-}   
-.cajapar {   
-  grid-area: cajapar;   
-  background-color:#f0e9db;
-  color: #020202;
-}   
 
-.cajadatos {   
-  grid-area: cajadatos;   
-  background-color:#4d4d4d;
-  color: #ffffff;
-}   
-
-.cajatexto {   
-    grid-area: cajatexto;   
-    background-color: white;
-    font-size: 20px;
-    font-family:sans-serif;
-    color: black;
-    text-align: center;
+.txt1 {
+  grid-area: txt1;
+  background-color: #EDECED !important;
+  color: #020202 !important;
+  text-align: center;
 }
-.cajaimagen{
-  grid-area: cajaimagen;
-  background-color: #EDECED;
 
+.txt2 {
+  grid-area: txt2;
+  background-color: #FFC107 !important;
+  color: #020202 !important;
+  text-align: center;
 }
-.imglogo{
+
+.txt3 {
+  grid-area: txt3;
+  background-color: #EDECED !important;
+  color: #020202 !important;
+  text-align: center;
+}
+
+.txt4 {
+  grid-area: txt4;
+  background-color: #FFC107 !important;
+  color: #020202 !important;
+  text-align: center;
+}
+
+.txtdatos {
+  grid-area: txtdatos;
+  background-color: #4d4d4d !important;
+  color: #ffffff !important;
+  width: auto;
+  height: auto;
+  text-align: center;
+}
+
+.cajaimg {
+  grid-area: cajaimg;
+  background-color: #EDECED !important;
+}
+
+.cajaimg2 {
+  grid-area: cajaimg2;
+  background-color: #FFC107 !important;
+  align-items: center;
+}
+
+.cajaimg3 {
+  grid-area: cajaimg3;
+  background-color: #EDECED !important;
+}
+
+.cajaimg4 {
+  grid-area: cajaimg4;
+  background-color: #FFC107 !important;
+}
+
+.imglogo {
   width: 80px;
-  height: 40px ;
+  height: 40px;
+}
+
+/*
+.imgpc:hover{  border-radius: 50%;
+-webkit-border-radius: 50%;
+box-shadow: 0px 0px 15px 15px #e6e6e6;
+-webkit-box-shadow:#e6e6e6;
+transform: rotate(360deg);
+-webkit-transform: rotate(360deg);}
+*/
+.iconos {
+  width: 80px;
+  height: 80px;
+}
+
+.contenedorskill {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 25%;
+  /* Espacio entre las imágenes */
+}
+
+.iconos {
+  width: 100%;
+  height: auto;
+}
+
+
+.progress1 {
+  padding: 6px;
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.progress-bar1 {
+  height: 18px;
+  border-radius: 30px;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+}
+
+.progress-moved .progress-bar1 {
+  width: 85%;
+  background-color: #FB8028;
+  animation: progressAnimation 4s;
+}
+
+@keyframes progressAnimation {
+  0% {
+    width: 5%;
+    background-color: #e48e50;
+  }
+
+  100% {
+    width: 85%;
+    background-color: #FB8028;
+  }
+}
+
+.progress2 {
+  padding: 6px;
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.progress-bar2 {
+  height: 18px;
+  border-radius: 30px;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+}
+
+.progress-moved .progress-bar2 {
+  width: 75%;
+  background-color: #264DE4;
+  animation: progressAnimation 4s;
+}
+
+@keyframes progressAnimation {
+  0% {
+    width: 5%;
+    background-color: #536fe0;
+  }
+
+  100% {
+    width: 75%;
+    background-color: #264DE4;
+  }
+}
+
+
+.progress3 {
+  padding: 6px;
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.progress-bar3 {
+  height: 18px;
+  border-radius: 30px;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+}
+
+.progress-moved .progress-bar3 {
+  width: 70%;
+  background-color: #E9CA32;
+  animation: progressAnimation 4s;
+}
+
+@keyframes progressAnimation {
+  0% {
+    width: 5%;
+    background-color: #e9cf4d;
+  }
+
+  100% {
+    width: 70%;
+    background-color: #E9CA32;
+  }
+}
+
+.progress4 {
+  padding: 6px;
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.progress-bar4 {
+  height: 18px;
+  border-radius: 30px;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+}
+
+.progress-moved .progress-bar4 {
+  width: 70%;
+  background-color: #8892BF;
+  animation: progressAnimation 4s;
+}
+
+@keyframes progressAnimation {
+  0% {
+    width: 5%;
+    background-color: #959ec5;
+  }
+
+  100% {
+    width: 70%;
+    background-color: #8892BF;
+  }
+}
+
+
+.progress5 {
+  padding: 6px;
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.progress-bar5 {
+  height: 18px;
+  border-radius: 30px;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+}
+
+.progress-moved .progress-bar5 {
+  width: 80%;
+  background-color: #5382A1;
+  animation: progressAnimation 4s;
+}
+
+@keyframes progressAnimation {
+  0% {
+    width: 5%;
+    background-color: #6ca3c7;
+  }
+
+  100% {
+    width: 80%;
+    background-color: #5382A1;
+  }
+}
+.txt2, .txt1, .txt3, .txt4, .txtdatos{
+  padding: 1vh;
 }
 
 /* PARA TABLETS */
 
-@media only screen and (min-width: 768px) {   
-    #contenedor {   
-      display: grid;
-      grid-template-rows: 1fr ;
-      grid-template-columns: 1fr;
-      grid-template-areas:
-      "cajaimpar cajaimagen"
-    "cajaimagen cajapar"
-    "cajaimpar cajaimagen"
-    "cajaimagen cajapar"
-    "cajaimpar cajaimagen"
-    "cajaimagen cajadatos"
-    "cajapar cajaimagen"
-    "cajaimagen cajaimpar";
- 
-     
-      /* Formateo */
-      width: 100%;
-      
-    }   
+/* Estilos para tabletas */
+@media only screen and (min-width: 768px) {
+  .contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-areas:
+      "imginicio imginicio"
+      "txt1 cajaimg"
+      "cajaimg2 txt2"
+      "txt3 cajaimg3"
+      " cajaimg4 txt4"
+      "txtdatos txtdatos";
+    width: 100%;
+    font-size: 20px;
+    padding: 1.5vh;
+  }
+
+  .cajaimg {
+    grid-area: cajaimg;
+    background-color: #EDECED !important;
+
+    justify-content: right;
+  }
+
+  .imginicio {
+    background-color: #EDECED;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: span 2;
+  }
+
+  .imginicio img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 43%;
+    height: auto;
+  }
+
+  .cajaimg2 {
+    grid-area: cajaimg2;
+    background-color: #FFC107 !important;
+    align-items: center;
+  }
+
+  .cajaimg3 {
+    grid-area: cajaimg3;
+    background-color: #EDECED !important;
+    align-items: right;
+  }
+
+  .cajaimg4 {
+    grid-area: cajaimg4;
+    background-color: #FFC107 !important;
+    justify-content: left;
+  }
+
+  .txt1 {
+    grid-area: txt1;
+    background-color: #EDECED !important;
+    color: #020202 !important;
+    justify-content: left;
+  }
+
+  .txt2 {
+    grid-area: txt2;
+    background-color: #FFC107 !important;
+    color: #020202 !important;
+    justify-content: right;
+  }
+
+  .txt3 {
+    grid-area: txt3;
+    background-color: #EDECED !important;
+    color: #020202 !important;
+    justify-content: left;
+  }
+
+  .txt4 {
+    grid-area: txt4;
+    background-color: #FFC107 !important;
+    color: #020202 !important;
+    justify-content: right;
+  }
+
+  .txtdatos {
+    grid-area: txtdatos;
+    background-color: #4d4d4d !important;
+    color: #ffffff !important;
+    width: auto;
+    height: auto;
+    justify-content: right;
+  }
+
+  .contenedorskill {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    /* Espacio entre las imágenes */
+  }
+
+  .iconos {
+    width: 100%;
+    height: auto;
+  }
+
+  .progress1 {
+    padding: 6px;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+  }
+
+  .progress-bar1 {
+    height: 18px;
+    border-radius: 30px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+  }
+
+  .progress-moved .progress-bar1 {
+    width: 85%;
+    background-color: #FB8028;
+    animation: progressAnimation 4s;
+  }
+
+  @keyframes progressAnimation {
+    0% {
+      width: 5%;
+      background-color: #e48e50;
+    }
+
+    100% {
+      width: 85%;
+      background-color: #FB8028;
+    }
+  }
+
+  .progress2 {
+    padding: 6px;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+  }
+
+  .progress-bar2 {
+    height: 18px;
+    border-radius: 30px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+  }
+
+  .progress-moved .progress-bar2 {
+    width: 75%;
+    background-color: #264DE4;
+    animation: progressAnimation 4s;
+  }
+
+  @keyframes progressAnimation {
+    0% {
+      width: 5%;
+      background-color: #536fe0;
+    }
+
+    100% {
+      width: 75%;
+      background-color: #264DE4;
+    }
+  }
+
+
+  .progress3 {
+    padding: 6px;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+  }
+
+  .progress-bar3 {
+    height: 18px;
+    border-radius: 30px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+  }
+
+  .progress-moved .progress-bar3 {
+    width: 70%;
+    background-color: #E9CA32;
+    animation: progressAnimation 4s;
+  }
+
+  @keyframes progressAnimation {
+    0% {
+      width: 5%;
+      background-color: #e9cf4d;
+    }
+
+    100% {
+      width: 70%;
+      background-color: #E9CA32;
+    }
+  }
+
+  .progress4 {
+    padding: 6px;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+  }
+
+  .progress-bar4 {
+    height: 18px;
+    border-radius: 30px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+  }
+
+  .progress-moved .progress-bar4 {
+    width: 70%;
+    background-color: #8892BF;
+    animation: progressAnimation 4s;
+  }
+
+  @keyframes progressAnimation {
+    0% {
+      width: 5%;
+      background-color: #959ec5;
+    }
+
+    100% {
+      width: 70%;
+      background-color: #8892BF;
+    }
+  }
+
+
+  .progress5 {
+    padding: 6px;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+  }
+
+  .progress-bar5 {
+    height: 18px;
+    border-radius: 30px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+  }
+
+  .progress-moved .progress-bar5 {
+    width: 80%;
+    background-color: #5382A1;
+    animation: progressAnimation 4s;
+  }
+
+  @keyframes progressAnimation {
+    0% {
+      width: 5%;
+      background-color: #6ca3c7;
+    }
+
+    100% {
+      width: 80%;
+      background-color: #5382A1;
+    }
+  }
+
+  .txt2, .txt1, .txt3, .txt4, .txtdatos{
+    padding: 1.25vh;
+  }
 }
 
 /* PARA PANTALLAS GRANDES */
 
-@media only screen and (min-width: 1024px)  {   
-  #contenedor {   
-      display: grid;
-      grid-template-rows: 1fr ;
-      grid-template-columns: 1fr;
-      grid-template-areas:
-      "cajaimpar cajaimagen"
-      "cajaimagen cajapar"
-      "cajaimpar cajaimagen"
-      "cajaimagen cajapar"
-      "cajaimpar cajaimagen"
-      "cajaimagen cajadatos"
-      "cajapar cajaimagen"
-      "cajaimagen cajaimpar";
-   
-     
-      /* Formateo */
-      width: 100%;
-     
-    }   
-} 
+@media only screen and (min-width: 1024px) {
+  .contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr;
+    grid-template-areas:
+      "imginicio imginicio"
+      "txt1 cajaimg"
+      "cajaimg2 txt2"
+      "txt3 cajaimg3"
+      " cajaimg4 txt4"
+      "txtdatos txtdatos";
+    width: 100%;
+    font-size: 25px;
+    padding: 2.5vh;
+  }
+
+  .cajaimg {
+    grid-area: cajaimg;
+    background-color: #EDECED !important;
+    justify-content: right;
+  }
+
+  .cajaimg2 {
+    grid-area: cajaimg2;
+    background-color: #FFC107 !important;
+    justify-content: center;
+  }
+
+  .cajaimg3 {
+    grid-area: cajaimg3;
+    background-color: #EDECED !important;
+    align-items: right;
+  }
+
+  .cajaimg4 {
+    grid-area: cajaimg4;
+    background-color: #FFC107 !important;
+    justify-content: left;
+  }
+
+  .txt1 {
+    grid-area: txt1;
+    background-color: #EDECED !important;
+    color: #020202 !important;
+    justify-content: left;
+  }
+
+  .txt2 {
+    grid-area: txt2;
+    background-color: #FFC107 !important;
+    color: #020202 !important;
+    justify-content: right;
+  }
+
+  .txt3 {
+    grid-area: txt3;
+    background-color: #EDECED !important;
+    color: #020202 !important;
+    justify-content: left;
+  }
+
+  .txt4 {
+    grid-area: txt4;
+    background-color: #FFC107 !important;
+    color: #020202 !important;
+    justify-content: right;
+  }
+
+  .txtdatos {
+    grid-area: txtdatos;
+    background-color: #4d4d4d !important;
+    color: #ffffff !important;
+    width: auto;
+    height: auto;
+    justify-content: right;
+  }
+
+  .txt2, .txt1, .txt3, .txt4, .txtdatos{
+    padding: 1.25vh;
+  }
+
+}
